@@ -1,0 +1,11 @@
+# Requirements with Version
+fastapi == 0.115.0
+bcrypt == 4.0.1
+
+# Requirements without Version
+uvicorn
+sqlalchemy
+alembic
+passlib
+python-jose
+python-multipart
