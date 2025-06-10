@@ -24,7 +24,7 @@ class Settings:
     def DB_URI(self) -> str:
         uri = f"{self.DB_DIALECT}://"
         if self.DB_USERNAME and self.DB_PASSWORD:
-            uri += f"{self.DB_PASSWORD}:{self.DB_PASSWORD}"
+            uri += f"{self.DB_USERNAME}:{self.DB_PASSWORD}"
         if self.DB_HOST and self.DB_PORT:
             uri += f"@{self.DB_HOST}:{self.DB_PORT}"
         uri += f"/{self.DATABASE}"
